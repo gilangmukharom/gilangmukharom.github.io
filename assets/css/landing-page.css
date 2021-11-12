@@ -1586,7 +1586,7 @@ i {
 }
 
 .landing-page .section-testimonial .carousel-inner .item .mask {
-    width: 300px;
+    min-width: 300px;
     min-height: 300px;
     border-radius: 20%;
     border: 5px solid #ddd;
