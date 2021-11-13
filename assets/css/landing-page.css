@@ -1037,7 +1037,7 @@ i {
 }
 
 .landing-page .carousel-indicators {
-    bottom: -50px;
+    bottom: -70px;
 }
 
 .landing-page .carousel-indicators li {
@@ -1073,11 +1073,23 @@ i {
     background-color: #FFA17F;
 }
 
+.landing-page .carousel-indicators2.carousel-indicators-orange .active {
+    background-color: #FFA17F;
+}
+
 .landing-page .carousel-indicators.carousel-indicators-red li {
     border-color: #E01724;
 }
 
+.landing-page .carousel-indicators2.carousel-indicators-red li {
+    border-color: #E01724;
+}
+
 .landing-page .carousel-indicators.carousel-indicators-red .active {
+    background-color: #E01724;
+}
+
+.landing-page .carousel-indicators2.carousel-indicators-red .active {
     background-color: #E01724;
 }
 
