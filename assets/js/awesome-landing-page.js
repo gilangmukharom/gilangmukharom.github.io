@@ -46,9 +46,6 @@ function SelectColor(btn) {
     $('a[id^="Demo"]').removeClass("btn-" + oldButton).addClass("btn-" + newButton).attr('data-button', newButton);
 
     $('.carousel-indicators').removeClass("carousel-indicators-" + oldColor).addClass("carousel-indicators-" + newColor);
-
-    $('.carousel-indicators2').removeClass("carousel-indicators2-" + oldColor).addClass("carousel-indicators2-" + newColor);
-
     $('.card').removeClass("card-" + oldColor).addClass("card-" + newColor);
 
     $('.selector').removeClass('active');
