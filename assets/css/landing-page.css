@@ -1110,10 +1110,10 @@ i {
 }
 
 .landing-page .carousel.fade .item {
-    -moz-transition: opacity ease-in-out .7s;
-    -o-transition: opacity ease-in-out .7s;
-    -webkit-transition: opacity ease-in-out .7s;
-    transition: opacity ease-in-out .7s;
+    -moz-transition: opacity ease-in-out .3s;
+    -o-transition: opacity ease-in-out .3s;
+    -webkit-transition: opacity ease-in-out .3s;
+    transition: opacity ease-in-out .3s;
     left: 0 !important;
     opacity: 0;
     top: 0;
@@ -1130,10 +1130,10 @@ i {
 
 .landing-page .carousel.fade .item.active {
     opacity: 1;
-    -moz-transition: opacity ease-in-out .7s;
-    -o-transition: opacity ease-in-out .7s;
-    -webkit-transition: opacity ease-in-out .7s;
-    transition: opacity ease-in-out .7s;
+    -moz-transition: opacity ease-in-out .3s;
+    -o-transition: opacity ease-in-out .3s;
+    -webkit-transition: opacity ease-in-out .3s;
+    transition: opacity ease-in-out .3s;
     z-index: 2;
 }
 
@@ -1174,7 +1174,7 @@ i {
     text-transform: uppercase;
     font-weight: 200;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 30px;
     position: relative;
     line-height: 24px;
@@ -1471,7 +1471,7 @@ i {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 20;
-    top: 15px;
+    top: 0px;
 }
 
 .landing-page .section-no-padding .parallax .info h1 {
