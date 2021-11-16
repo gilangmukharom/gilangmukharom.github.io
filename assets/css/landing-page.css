@@ -528,7 +528,7 @@ i {
 }
 
 .btn-lg {
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
     padding: 14px 30px;
     font-weight: 400;
@@ -1471,7 +1471,7 @@ i {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 20;
-    top: 150px;
+    top: 15px;
 }
 
 .landing-page .section-no-padding .parallax .info h1 {
