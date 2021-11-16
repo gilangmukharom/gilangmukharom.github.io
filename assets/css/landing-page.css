@@ -994,7 +994,7 @@ i {
 }
 
 .landing-page .section-description h5 {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .landing-page .img-container {
@@ -2061,7 +2061,7 @@ i {
         height: auto;
     }
     .landing-page .carousel-indicators {
-        bottom: -30px;
+        bottom: -50px;
     }
     .landing-page .carousel {
         min-height: 210px;
