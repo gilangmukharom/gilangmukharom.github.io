@@ -97,20 +97,18 @@
                         cancelButtonText: 'Udah',
                         showCancelButton: true,
                     });
+
                     if (kamu) {
                         await swals.fire(
                             `Sama dong kita hahaha. Kalau gitu kayanya enak ni kalau ketemu langsung buat ngobrol. Mau gak? Kalau mau aku tunggu di kafe .... malem ini paling telat jam 9 malem ya, lebih dari itu aku udah pulang dan mungkin bisa dilanjut via wa atau ketemu dilain hari`
                         );
-                        if (kangen) {
-                            await swals.fire(`Huhu iya ${author} juga kangen ${nama} :((`);
-                            await swals.fire('Terakhir deh, Sumpah');
-                            await swals.fire('Coba klik ikon hati di paling bawah dong');
-                        } else {
-                            //gak kangen
-                        }
+                    } else {
+                        await swals.fire('Kalau udah bisa, selamat ya! Semoga kamu bisa terus melangkah kedepan dan berkembang. Tinggal aku yg nantinya nyusul, harus lebih keras lagi berjuangnya biar bisa lupa walaupun aku yakin ngelupain seseorang yg pernah mengukir cerita indah di kehidupan kita itu bukan hal yg mudah', '', 'error');
+                        await swals.fire('Tapi dari sini aku tau kalau keputusan kamu harus diakui dan dihargai. So, bakal aku usahain kalau moment ini adalah moment terakhir aku gangguin kamu.', '', 'error');
+                        await swals.fire('Btw sebenernya aku udah bikin video buat kamu dari lama jadi aku masukin kesini aja ya biar bisa kamu tonton', '', 'success');
                     }
                 } else {
-                    //gak sayang
+                    await swals.fire('hehe yaudah deh :)', '', 'error');
                 }
             } else {
 
