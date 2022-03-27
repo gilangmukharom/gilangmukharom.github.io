@@ -1,127 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Page Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home</title>
 </head>
 
 <body>
-    <div class='position-absolute top-50 start-50 translate-middle'>
-        <button id='button' class='btn btn-primary btn-lg' onclick='mulai()'> Nah terus klik ini :) </button>
-        <div id='iloveyou' style='display: none;'>
-            <h2 class='text-center'>Aku sayang kamu<br>&#10084;&#65039;</h2>
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap">
+        <div class="site-navbar site-navbar-target js-sticky-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <h1 class="my-0 site-logo"><a href="index.html">Brand</a></h1>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                    <li class="active"><a href="#home-section" class="nav-link">Beranda</a></li>
+                                    <li><a href="#classes-section" class="nav-link">Produk</a></li>
+                                    <li><a href="#about-section" class="nav-link">About</a></li>
+                                    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <audio autoplay controls>
-        <source src="lagudinda.mp3" type="audio/mp3"></source>
-    </audio>
+    <div class="inibanner container-fluid">
+        <div class="container">
+            <div class="tulisan-background">
+                <div class="tulisan-banner">
+                    <h3>Madu Hutan Asli Nugih – Madu sehat, alami, dan berkhasiat</h3>
+                    <br>
+                    <p style="text-indent: 0.3in;"> Madu merupakan bahan alami yang memiliki rasa manis yang dihasilkan oleh lebah dari nektar atau sari bunga yang berasal dari bagian-bagian tanaman hidup. Di Indonesia, Madu menjadi salah satu produk yang sangat diminati karena kaya
+                        akan manfaat dan kegunaan baik dikonsumsi secara langsung ataupun sebagai bahan campuran pada makanan dan minuman.</p>
+                </div>
+            </div>
+            <a href="index3.html">
+                <button class="btn btn-primary" type="button">Lihat</button>
+            </a>
+        </div>
+    </div>
 
-    <h3>
-        ^^ klik play dulu dong</h3>
+    <div class="container-fluid-lg ">
+        <div class="fitur">
+            <div class="tulisan">
+                <h1>KELEBIHAN MADU NUGIH</h1>
+                ✔ Kualitas terjamin.<br> ✔ Harga terjangkau. <br> ✔ Menerima pembelian secara grosir dan eceran. <br>✔ Tidak menggunakan campuran pemanis buatan.<br>✔ Merupakan madu hutan asli yang diambil dari petani.<br> ✔ Cocok dikonsumsi langsung,
+                maupun sebagai bahan dasar makanan/minuman.
+                <br>
+            </div>
+        </div>
+    </div>
 
-    <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-    <script src="https://www.cssscript.com/demo/confetti-falling-animation/confetti.js"></script>
-    <script type="text/javascript">
-        const author = 'dinda';
-        document.getElementById('hati').innerHTML = `Made with &#10084;&#65039; by ${author}`;
-        const swals = Swal.mixin({
-            cancelButtonColor: '#d33',
-            confirmButtonColor: '#3085d6',
-        });
-        async function mulai() {
-            await swals.fire('Hai cen!', 'Apa kabar?', 'question');
-            await swals.fire(
-                'Semoga kamu sedang dalam keadaan yg baik ya.. Kalaupun lagi ga baik, semoga dengan adanya hari ini bisa bikin kamu jadi membaik sedikit. Agak maksa ya buat harus baik baik aja haha padahal normal juga jadi manusia yg lg ga baik baik aja. Anyways..'
-            );
-            await swals.fire(
-                'Yang pertama jelas aku mau menyampaikan banyak maaf karena melalui ini, aku mungkin aja bisa bikin kamu jadi ga baik baik aja. Melalui ini juga nyali aku ada ga ada sebenernya alias takut jg bikin kmu nantinya jadi marah sm aku krn aku masih gangguin kamu. Maafin aku ya...',
-                'question');
-            var {
-                value: nama
-            } = await swals.fire({
-                title: 'Masukin nama kamu dulu',
-                input: 'text',
-                showCancelButton: true,
-            });
-            if (nama) {
-                var {
-                    isConfirmed: sayang
-                } = await swals.fire({
-                    title: `${nama} maafin aku ya?`,
-                    confirmButtonText: 'Iya',
-                    cancelButtonText: 'Gamau males',
-                    showCancelButton: true,
-                });
-                if (sayang) {
-                    await swals.fire(`Thankyou for your forgive me!`);
-                    await swals.fire(
-                        `Yang kedua aku mau nyampein selamat buat kamu yang kali ini beneran udah 21+ HAHAHA. Selamat karena udah berhasil melalui 21th kehidupan, semoga ditahun ini kamu bisa lebih kuat dan legowo karena katanya semakin dewasa harus semakin banyak legowonya`
-                    );
-                    await swals.fire(
-                        `Semoga juga ditahun ini dan tahun-tahun yg akan datang banyak yg tercapai/terwujud dalam kesemogaan kamu sebelumnya alias satu persatu keinginan dan cita-cita kamu terkabul, tercapai, dan terwujud.`
-                    );
-                    await swals.fire(
-                        `Mumpung masih hari spesial jadi mari perbanyak "semoga"nya walaupun di hari-hari biasanya jg bisa aja berdoa tp kali ini khusyuson aku ngedoain kamu agar panjang umur, dilancarkan rejekinya, dan sehat serta bahagia.`
-                    );
-                    await swals.fire(
-                        `Makasih yaa udah baca sampe akhir.. Tp sbntar, masih ada lagi yg mau aku sampein..`);
-                    await swals.fire(
-                        `Karena dari tadi isinya harapan terus, kali ini isinya perayaan rasa syukur. Yap, rasa syukur ini perlu dirayakan. Bersyukur atas kehadiran kamu di hidup aku yang membawa banyak pelajaran, salah satunya adalah..`
-                    );
-                    await swals.fire(
-                        `Perpisahan kemarin. Bukan, bukan aku mau bahas lagi. Tapi aku mau ngasih tau ke kamu perihal pelajaran yang aku dapatkan dari cerita kemarin. Bahwa aku baru sadar kalau kesempurnaan itu diciptakan bersama, bukan ada dengan sendirinya.`
-                    );
-                    await swals.fire(
-                        'Aku yang pernah bilang ke kamu kalo ada bbrpa sifat kmu yang blm bisa aku terima. Seharusnya bukan soal bisa diterima/engga, tapi soal mau melengkapi/engga biar bisa jadi sempurna. Karena pasti ada juga sifat-sifat di aku yang bikin kamu kesel tp kmu pendem dan kmu yakin serta mau melengkapi'
-                    );
-                    await swals.fire(
-                        'Yap, seharusnya kurang lebih begitu. Tapi karena nasi suda menjadi bubur, apalah daya~ Walaupun sebenernya bubur rasanya enak juga, apalagi kalau diaduk tapi ga pake kacang. Kriuk'
-                    );
-                    await swals.fire(
-                        'Oke lanjut. Yap, terima kasih atas demikian. Dengan adanya hikmah ini, aku bisa lebih mawas diri nantinya. Entah nanti dengan pasangan baru aku/ kamu dengan pasangan baru kamu/ dengan kita yang baru.'
-                    );
-                    await swals.fire('Et, kita yg baru? Begimane ni maksudnya?');
-                    await swals.fire(
-                        'Yap, tepat. Udah sebulan aku berusaha lupain kamu, tapi tetep gabisa. Gila lu, pake pelet apasih?'
-                    );
-                    var {
-                        isConfirmed: kamu
-                    } = await swals.fire({
-                        title: `Kalau kamu gimana? Udah bisa lupain aku?`,
-                        confirmButtonText: 'Belum nih hehe',
-                        cancelButtonText: 'Udah',
-                        showCancelButton: true,
-                    });
+    <div class="manfaat container-fluid">
+        <h1>MANFAAT MADU NUGIH</h1>
+        <div class="row">
+            <div class="col-2">
+                <div class="radikal1">
+                    <img src="assets/img/icon/atom.png">
+                    <p>Menangkal Radikal Bebas</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="radikal2">
+                    <img src="assets/img/icon/luka.png">
+                    <p>Meredakan Penyakit Batuk</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="radikal3">
+                    <img src="assets/img/icon/antivirus.png">
+                    <p>Menjaga Imunitas Tubuh</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="radikal4">
+                    <img src="assets/img/icon/heal.png">
+                    <p>Mempercepat Penyembuhan Luka</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="radikal5">
+                    <img src="assets/img/icon/usus.png">
+                    <p>Menjaga Sistem Pencernaan</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="radikal6">
+                    <img src="assets/img/icon/healthcare.png">
+                    <p>Menjaga Kesehatan Jantung</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    if (kamu) {
-                        await swals.fire(
-                            `Sama dong kita hahaha. Kalau gitu kayanya enak ni kalau ketemu langsung buat ngobrol. Mau gak? Kalau mau aku tunggu di kafe .... malem ini paling telat jam 9 malem ya, lebih dari itu aku udah pulang dan mungkin bisa dilanjut via wa atau ketemu dilain hari`
-                        );
-                    } else {
-                        await swals.fire('Kalau udah bisa, selamat ya! Semoga kamu bisa terus melangkah kedepan dan berkembang. Tinggal aku yg nantinya nyusul, harus lebih keras lagi berjuangnya biar bisa lupa walaupun aku yakin ngelupain seseorang yg pernah mengukir cerita indah di kehidupan kita itu bukan hal yg mudah', '', 'error');
-                        await swals.fire('Tapi dari sini aku tau kalau keputusan kamu harus diakui dan dihargai. So, bakal aku usahain kalau moment ini adalah moment terakhir aku gangguin kamu.', '', 'error');
-                        await swals.fire('Btw sebenernya aku udah bikin video buat kamu dari lama jadi aku masukin kesini aja ya biar bisa kamu tonton', '', 'success');
-                    }
-                } else {
-                    await swals.fire('hehe yaudah deh :)', '', 'error');
-                }
-            } else {
+    <!--Carousel Produk-->
+    <div class="content">
+        <div class="container">
+            <h1 class="my-5 text-center">Varian Produk</h1>
+            <div class="slider-92911">
+                <div class="owl-carousel slide-one-item ">
+                    <div class="d-md-flex testimony-29101 align-items-stretch ">
+                        <div class="image" style="background-image: url( 'assets/img/foto/prodbig.png'); "></div>
+                        <div class="text ">
+                            <blockquote>
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam,
+                                    incidunt!&rdquo;
+                                </p>
 
-            }
-        }
+                                <div class="author">
+                                    <button>Lihat Produk</button>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- .item -->
 
-        function hati() {
-            document.getElementById('button').style = 'display: none';
-            document.getElementById('iloveyou').style = '';
-            startConfetti();
-        }
-    </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+                    <div class="d-md-flex testimony-29101 align-items-stretch ">
+                        <div class="image " style="background-image: url( 'assets/img/foto/prodmedium.png'); "></div>
+                        <div class="text ">
+                            <blockquote>
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam,
+                                    incidunt!&rdquo;
+                                </p>
+
+                                <div class="author ">
+                                    <button>Lihat Produk</button>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- .item -->
+
+                    <div class="d-md-flex testimony-29101 align-items-stretch ">
+                        <div class="image " style="background-image: url( 'assets/img/foto/proddua.png'); "></div>
+                        <div class="text ">
+                            <blockquote>
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam,
+                                    incidunt!&rdquo;
+                                </p>
+
+                                <div class="author ">
+                                    <button>Lihat Produk</button>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- .item -->
+                </div>
+
+                <div class="my-5 text-center ">
+                    <ul class="thumbnail ">
+                        <li class="active ">
+                            <a href="# "><img src="assets/img/foto/prodbig.png " alt="Image " class="img-fluid "></a>
+                        </li>
+                        <li>
+                            <a href="# "><img src="assets/img/foto/prodmedium.png " alt="Image " class="img-fluid "></a>
+                        </li>
+                        <li>
+                            <a href="# "><img src="assets/img/foto/proddua.png " alt="Image " class="img-fluid "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="produkcontoh">
+        <div class="container ">
+            <div class="row ">
+                <div class="caption col-md-8 py-5 ">
+                    <h1>KURSI ROTAN ANYAM</h1>
+                    <p>Penggunaan rotan sebagai bahan baku utama membuat tampilan menjadi ekslusif dan simpel untuk dilihat, serta sangat nyaman untuk digunakan dengan desain yang minimalis.</p>
+                    <p>Dengan beberapa kelebihan yang ditawarkan diantaranya nyaman untuk digunakan, perawatan yang mudah, kokoh, desain minimalis dan awet membuat kursi dari anyaman rotan ini seringkali menjadi sasaran beberapa pembeli di toko kami.</p>
+                </div>
+
+                <div class="gambar1 col-md-4 py-5 ">
+                    <img src="assets/img/foto/IMG-20211106-WA0014.jpg " style="width: 60%; height: 100%; ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kelebihan-->
+    <div class="kelebihan ">
+        <h1>Kelebihan Toko Kami</h1>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="card card-orange ">
+                        <div class="icon ">
+                            <i class="pe-7s-star "></i>
+                        </div>
+                        <div class="text ">
+                            <h4>Kualitas Terjamin</h4>
+                            <p>Karena kepuasan pelanggan merupakan hal yang utama bagi toko kami, maka kualitas sangat kami perhatikan dari mulai pemilihan bahan, proses produksi, dan pengiriman kepada konsumen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card card-orange ">
+                        <div class="icon ">
+                            <i class="pe-7s-cash "></i>
+                        </div>
+                        <h4>Murah</h4>
+                        <p>Seiring dengan kualitas yang kami tawarkan tentunya kami memiliki harga yang bersaing dipasaran yang mana nyaman dikantong pelanggan tanpa mengurangi sedikitpun kualitas yang kami tawarkan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card card-orange ">
+                        <div class="icon ">
+                            <i class="pe-7s-pen "></i>
+                        </div>
+                        <h4>Alami & Berkhasiat</h4>
+                        <p>Produk toko kami merupakan produksi langsung dari para pengrajin, sehingga cocok untuk kebutuhan pribadi maupun untuk dijual kembali. Kami juga menerima pembelian secara grosir maupun eceran.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Testimoni-->
+    <div class="testimoni ">
+        <div class="container ">
+            <h1>TESTIMONI</h1>
+            <div class="c2 ">
+
+                <div id="carouselExampleIndicators " class="carousel slide " data-bs-ride="carousel ">
+                    <div class="carousel-indicators ">
+                        <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
+                        <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
+                        <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
+                    </div>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <img src="assets/img/testifix1.jpg " class="d-block w-100 " alt="... ">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="assets/img/testifix1.jpg " class="d-block w-100 " alt="... ">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="assets/img/testifix1.jpg " class="d-block w-100 " alt="... ">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="prev ">
+                        <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                        <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="next ">
+                        <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                        <span class="visually-hidden ">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.3.1.min.js "></script>
+<script src="assets/js/popper.min.js "></script>
+<script src="assets/js/bootstrap.min.js "></script>
+<script src="assets/js/jquery.sticky.js "></script>
+<script src="assets/js/main.js "></script>
+<script src="assets/js/owl.carousel.min.js "></script>
 
 </html>
