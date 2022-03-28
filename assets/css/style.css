@@ -229,7 +229,7 @@
         .site-navbar .site-navigation .site-menu .has-children:hover>a,
         .site-navbar .site-navigation .site-menu .has-children:focus>a,
         .site-navbar .site-navigation .site-menu .has-children:active>a {
-            color: #fff;
+            color: black;
         }
         
         .site-navbar .site-navigation .site-menu .has-children:hover,
@@ -479,20 +479,20 @@
         
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a {
             padding: 10px 10px;
-            color: rgba(255, 255, 255, 0.6);
+            color: #f6b93b;
             font-size: 15px;
         }
         
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a:hover {
-            color: #f6b93b !important;
+            color: black !important;
         }
         
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a.active {
-            color: #f6b93b !important;
+            color: black !important;
         }
         
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li.active a {
-            color: #f6b93b;
+            color: black;
         }
         
         .site-navigation {
@@ -616,7 +616,7 @@
             padding-top: 3%;
         }
         
-        .gambar {
+        .gambar1 {
             text-align: center;
         }
         /*Kelebihan*/
@@ -854,10 +854,99 @@
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
         }
+        /*footer*/
+        
+        .footer-20192 {
+            position: relative;
+            color: #f6b93b;
+            padding: 7rem 0;
+            background-color: rgb(43, 43, 43);
+        }
+        
+        .footer-20192 .container {
+            position: relative;
+        }
+        
+        .footer-20192 h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+        
+        .footer-20192 .links li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            display: block;
+        }
+        
+        .footer-20192 .links li a {
+            color: #666873;
+        }
+        
+        .footer-20192 .links li a:hover {
+            color: #fff;
+        }
+        
+        .footer-20192 .social li {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .footer-20192 .social li a {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            background-color: #f6b93b;
+            color: #fff;
+        }
+        
+        .footer-20192 .social li a>span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .footer-20192 .footer-logo {
+            color: #f6b93b;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+        
+        .footer-20192 .copyright {
+            color: #666873;
+        }
+        
+        .footer-20192 .cta {
+            -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+            box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+            padding: 20px;
+            background-color: #f6b93b;
+            top: -150px;
+            position: relative;
+            border-radius: 10px;
+        }
+        
+        .footer-20192 .cta h2,
+        .footer-20192 .cta h3 {
+            line-height: 1.5;
+        }
+        
+        .footer-20192 .cta h3 {
+            font-size: 20px;
+        }
         
         @media screen and (max-width: 960px) {
             .inibanner {
-                background: url('../img/bannerfixbanner.png') no-repeat;
+                background: url('../img/banner-1@300x.png') no-repeat;
                 background-size: contain;
                 color: black;
                 animation: slide 850ms ease-in 1s forwards;
@@ -899,7 +988,7 @@
             .fitur .tulisan {
                 padding-top: 10%;
             }
-            .gambar {
+            .gambar1 {
                 text-align: center;
             }
             .galery {
@@ -923,11 +1012,24 @@
             .site-navigation {
                 text-align: center;
             }
+            .thumbnail {
+                width: fit-content;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                -webkit-transform: translateY(50%) translateX(-50%);
+                -ms-transform: translateY(50%) translateX(-50%);
+                transform: translateY(50%) translateX(-50%);
+                z-index: 99;
+            }
         }
         
         @media screen and (max-width: 720px) {
             .inibanner {
-                background: url('../img/bannerfixbanner.png') no-repeat;
+                background: url('../img/banner-1@300x.png') no-repeat;
                 background-size: contain;
                 color: black;
                 animation: slide 850ms ease-in 1s forwards;
@@ -969,7 +1071,7 @@
             .fitur .tulisan {
                 padding-top: 10%;
             }
-            .gambar {
+            .gambar1 {
                 text-align: center;
             }
             .galery {
@@ -993,11 +1095,28 @@
             .site-navigation {
                 text-align: right;
             }
+            .madu img {
+                padding-top: 5%;
+                width: 90%;
+            }
+            .thumbnail {
+                width: fit-content;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                -webkit-transform: translateY(50%) translateX(-50%);
+                -ms-transform: translateY(50%) translateX(-50%);
+                transform: translateY(50%) translateX(-50%);
+                z-index: 99;
+            }
         }
         
-        @media screen and (max-width: 460px) {
+        @media screen and (max-width: 480px) {
             .inibanner {
-                background: url('../img/bannerfixbanner.png') no-repeat;
+                background: url('../img/banner-1@300x.png') no-repeat;
                 background-size: contain;
                 color: black;
                 animation: slide 850ms ease-in 1s forwards;
@@ -1014,7 +1133,7 @@
                 -webkit-backdrop-filter: blur(3px);
                 border-radius: 10px;
                 border: 1px solid rgba(255, 255, 255, 0.18);
-                width: 380px;
+                width: 350px;
             }
             .inibanner button {
                 margin-top: 3%;
@@ -1026,7 +1145,7 @@
                 border: none;
             }
             .fitur {
-                height: 40vh;
+                height: 50vh;
                 position: relative;
                 text-align: center;
                 color: black;
@@ -1065,5 +1184,112 @@
             }
             .site-navigation {
                 text-align: right;
+            }
+            .madu img {
+                padding-top: 5%;
+                width: 90%;
+            }
+            .thumbnail {
+                width: fit-content;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                -webkit-transform: translateY(50%) translateX(-50%);
+                -ms-transform: translateY(50%) translateX(-50%);
+                transform: translateY(50%) translateX(-50%);
+                z-index: 99;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            .inibanner {
+                background: url('../img/banner-1@300x.png') no-repeat;
+                background-size: contain;
+                color: black;
+                animation: slide 850ms ease-in 1s forwards;
+                padding-left: 0%;
+            }
+            .inibanner .tulisan-banner {
+                max-width: 80%;
+                font-size: smaller;
+            }
+            .inibanner .tulisan-background {
+                background: rgba(248, 231, 28, 0.15);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(3px);
+                -webkit-backdrop-filter: blur(3px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                width: 380px;
+            }
+            .inibanner button {
+                margin-top: 3%;
+                margin-left: 35%;
+                width: 90px;
+                background-color: #f6b93b;
+                color: white;
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                border: none;
+            }
+            .fitur {
+                height: 50vh;
+                position: relative;
+                text-align: center;
+                color: black;
+                background: rgba(248, 231, 28, 0.15);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(3px);
+                -webkit-backdrop-filter: blur(3px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+            .fitur .tulisan {
+                padding-top: 10%;
+            }
+            .gambar {
+                text-align: center;
+            }
+            .galery {
+                width: 35rem;
+                box-shadow: 0px 0px 10px 0px rgb(80, 80, 80);
+                border-radius: 10px;
+            }
+            .galery img {
+                align: center;
+                max-width: 100%;
+                max-height: 20rem;
+            }
+            .testimony-29101 .image {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 0px;
+            }
+            .testimony-29101 .text {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .site-navigation {
+                text-align: right;
+            }
+            .madu img {
+                padding-top: 5%;
+                width: 90%;
+            }
+            .thumbnail {
+                width: fit-content;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                -webkit-transform: translateY(50%) translateX(-50%);
+                -ms-transform: translateY(50%) translateX(-50%);
+                transform: translateY(50%) translateX(-50%);
+                z-index: 99;
             }
         }
