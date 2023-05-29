@@ -1,0 +1,1111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* <---- HOME ----> */
+
+/* Navbar */
+
+.navbar {
+    border-bottom: solid 2px black;
+}
+
+.logo-navbar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #0084C4;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.navbar-tittle {
+    margin-left: 10px;
+    border-left: solid 1px #0084C4;
+}
+
+.navbar-tittle h5 {
+    margin-left: 5px;
+}
+
+/* body */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container .logo-img {
+    align-items: center;
+    width: 15%;
+}
+
+.container .tittle {
+    font-size: 30pt;
+    color: #0084C4;
+    font-weight: 600;
+}
+
+.container .logo-img img {
+    width: 100%;
+    height: auto;
+}
+
+.container .search {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border: 2px solid #0084C4;
+    border-radius: 20px;
+}
+
+.search span {
+    max-width: 5%;
+    margin: 0 auto;
+}
+
+.search .input-pencarian {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+    border-left: 2px solid #0084C4;
+}
+
+.container .search button {
+    border: none;
+    width: 20%;
+    min-height: 50px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    align-items: center;
+    color: white;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.container .container-scroll {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-scroll .header-scroll {
+    background-color: #0084C4;
+    width: 100%;
+
+}
+
+.container .scroll-item {
+    width: 100%;
+}
+
+.scroll-item .item {
+    margin-top: 5px;
+    border: 1px solid lightgray;
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #30303034;
+    background-color: #f5f5f5;
+}
+
+.footer-content ul {
+    display: flex;
+}
+
+.footer-content ul li {
+    list-style: none;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footercpy {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0084C4;
+    color: white;
+}
+
+/* ---- Login ---- */
+
+.login-tittle {
+    color: #0084C4;
+    font-weight: 700;
+    font-size: 39px;
+}
+
+.formlogin {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.formlogin .input-email, .input-password {
+    border: 1px solid #0084C4;
+    border-radius: 15px;
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.forgot-feature {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    gap: 5%;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+.forgot-btn {
+    color: red;
+    text-decoration: none;
+}
+
+.checkbox-login {
+    display: flex;
+    gap: 10px;
+}
+
+.formlogin .btn-submit_login {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.formlogin button {
+    width: 20%;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.auth-btn {
+    width: 50%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-btn .login-google {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.btn-text {
+    margin: 0 auto;
+}
+
+.google-icon-wrapper img {
+    width: 30px;
+    height: 30px;
+}
+
+.auth-btn .signup-text {
+    display: flex;
+}
+
+.auth-btn .signup-text a {
+    text-decoration: none;
+}
+
+/* Signup Layout */
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-signup .input-email, .input-password, .input-name, .input-username {
+    border: 1px solid #0084C4;
+    border-radius: 15px;
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.form-signup .btn-submit_signup {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 2rem;
+}
+
+.form-signup .btn-submit_signup button {
+    width: 25%;
+    min-height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+/* Arsip layout */
+
+.tittle-arsip {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #606060;
+}
+
+.shape-arsip {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.container-arsip {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5%;
+    min-height: 100%;
+}
+
+.box-arsip {
+    flex: 60%;
+    padding-top: 1rem;
+}
+
+.box-filter-arsip {
+    flex: 35%;
+}
+
+.filter-arsip {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.filter-arsip a {
+    text-decoration: none;
+    color: black;
+}
+
+.table-content table {
+    width: 100%;
+}
+
+.table-content .table-item {
+    border-bottom: 1px solid black;
+}
+
+.table-content td svg {
+    background-color: rgb(28, 189, 28);
+}
+
+.search-item-box {
+    display: flex;
+}
+
+.box-filter-arsip .input-search-arsip {
+    border: none;
+    border: 1px solid #0084C4;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+}
+
+.search-item-box button {
+    width: 10%;
+    padding: 10px;
+    border: none;
+    background-color: #0084C4;
+    color: white;
+    border-radius: 0 50px 50px 0;
+}
+
+.no-border {
+    border: none;
+    outline: none;
+}
+
+.tittle-filter-arsip {
+    margin-top: 1rem;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.box-filter-arsip {
+    padding-top: 4rem;
+}
+
+.checkbox-filter-arsip label {
+    color: #555555;
+}
+
+.item-laporan,
+.item-dokumentasi,
+.item-kontrak,
+.item-dokumen {
+    display: flex;
+    gap: 5px;
+}
+
+/* Pagination */
+.arsip-number-page {
+    width: 80%;
+    padding-top: 1rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.pagination-content {
+    width: 45%;
+}
+
+.arsip-number-page .pagination {
+    gap: 10px;
+}
+
+.arsip-number-page .pagination button {
+    border: none;
+}
+
+.pagination .btn-number-pagination {
+    background-color: #0084C4;
+    width: 30px;
+}
+
+.btn-back-arsip {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-back-arsip button {
+    background-color: none;
+    border: none;
+    font-weight: 400;
+}
+
+/* Magang */
+
+.search-item-magang {
+    display: flex;
+    height: 40px;
+}
+
+.search-item-magang .input-search-magang {
+    border-radius: 50px 0 0 50px;
+    border: 1px solid #0084C4;
+    padding: 10px;
+}
+
+.search-item-magang button {
+    border-radius: 0px 50px 50px 0px;
+    background-color: #0084C4;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container-magang {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tittle-magang {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tittle-magang p {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.tittle-magang .shape-magang {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.box-magang {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-magang button {
+    border: none;
+}
+
+.btn-back-magang {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    padding-top: 5rem;
+}
+
+.btn-back-magang button {
+    background-color: none;
+    border: none;
+    font-weight: 400;
+}
+
+/* Laporan Magang */
+.container-laporan-magang {
+    min-height: 100%;
+}
+
+.tittle-laporan-magang {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    color: #606060;
+    line-height: 23px;
+}
+
+.shape-laporan-magang {
+    width: 80%;
+    height: 30px;
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.table-laporan-magang {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table-laporan-magang table {
+    width: 60%;
+}
+
+.table-laporan-magang table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.table-laporan-magang .judul-laporan {
+    border-bottom: 2px solid #17365D;
+    font-size: 15px;
+    line-height: 29px;
+    font-style: normal;
+    font-weight: 700;
+    color: #073C64;
+}
+
+.table-laporan-magang .table-content-laporan {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0;
+}
+
+/* CETAK LAPORAN MAGANG */
+
+.container-cetak-laporan {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.tittle-cetak-laporan {
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.tittle-cetak-laporan #tittle-cetak-laporan {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.box-cetak-laporan {
+    width: 90%;
+    height: 90vh;
+    margin: 2rem auto;
+    border-radius: 20px;
+    border: 2px solid #0084C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table-cetak-laporan {
+    width: 90%;
+}
+
+.table-cetak-laporan tr {
+    padding: 10px;
+    border-bottom: 1px solid #909090;
+    text-align: left;
+    height: auto;
+}
+
+.table-cetak-laporan td {
+    padding: 10px;
+    vertical-align: top;
+    height: auto;
+}
+
+.table-cetak-laporan .judul {
+    width: 10%;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.button-upload {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.modal {
+    display: none;
+    /* Modal akan tersembunyi secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Latar belakang semi-transparan */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 35%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.modal-content span {
+    text-align: start;
+}
+
+.modal-content p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.modal-content button {
+    width: 70px;
+    height: 50px;
+    margin: 2rem auto;
+    background-color: #006ec3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation-table {
+    margin-top: 2vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-table .back {
+    background: none;
+    border: none;
+}
+
+.navigation-table .download {
+    background-color: #0084C4;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Form Peminjaman */
+.container-form-peminjaman {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.tittle-form-peminjaman {
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    border-bottom: 2px solid #6060608b;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tittle-form-peminjaman #tittle-form-peminjaman {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.box-form-peminjaman {
+    padding-left: 10%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "form-peminjaman button-form";
+    grid-template-columns: 0.5fr 1fr;
+    flex-direction: column;
+}
+
+.form-peminjaman {
+    grid-area: form-peminjaman;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.box-form-peminjaman .form-peminjaman .tittle-box {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.box-form-peminjaman .form-peminjaman input {
+    border: 1px solid #0084C4;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+.box-form-peminjaman .form-peminjaman label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.box-form-peminjaman .form-peminjaman input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.button-form {
+    grid-area: button-form;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.button-form button {
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0083c4ac;
+    color: white;
+}
+
+/* Layout Kontrak Arsip Jogja */
+
+.container-arsip-jogja {
+    width: 100%;
+    min-height: 70vh;
+}
+
+.container-arsip-jogja .box-arsip-jogja {
+    width: 70%;
+    margin: 5%;
+    box-shadow: inset 3px 0px 3px #D8D8D8;
+}
+
+.box-arsip-jogja .tittle-arsip-jogja {
+    width: 80%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+
+    color: #606060;
+}
+
+.box-arsip-jogja .content-arsip-jogja {
+    width: 80%;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.content-arsip-jogja img {
+    width: 30px;
+    height: 30px;
+}
+
+.content-arsip-jogja table {
+    width: 100%;
+}
+
+.content-arsip-jogja table .judul {
+    width: 15%;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    vertical-align: middle;
+}
+
+.container-arsip-jogja table tr {
+    border-bottom: 1px solid #55555533;
+}
+
+.container-arsip-jogja table td {
+    padding: 10px 0 10px 0;
+    vertical-align: middle;
+}
+
+.container-arsip-jogja .btn-unduh {
+    padding-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+.container-arsip-jogja .btn-unduh button {
+    border: none;
+    border-radius: 5px;
+    background-color: #006fc388;
+    color: white;
+    width: 10%;
+    min-height: 40px;
+}
+
+.btn-back-arsip-jogja {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-back-arsip-jogja
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #006ec3;
+    width: 10%;
+    min-height: 40px;
+}
+
+/* Layout Form Kontrak Diorama Arsip Jogja */
+.container-form-kontrak {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.tittle-form-kontrak {
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid #6060608b;
+    width: 85%;
+    margin: 0 auto;
+    color: #606060;
+}
+
+.tittle-form-kontrak #tittle-form-kontrak {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    color: #606060;
+}
+
+.box-form-kontrak {
+    padding-left: 10%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "form-peminjaman button-form";
+    grid-template-columns: 0.5fr 1fr;
+    flex-direction: column;
+}
+
+.form-kontrak {
+    grid-area: form-peminjaman;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.box-form-kontrak .form-kontrak .tittle-box {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.box-form-kontrak .form-kontrak input {
+    border: 1px solid #0084C4;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+.box-form-kontrak .form-kontrak label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.box-form-kontrak .form-kontrak input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.button-form {
+    grid-area: button-form;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.button-form button {
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0083c4ac;
+    color: white;
+}
+
+/* Dokumentasi */
+.box-dokumentasi{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-dokumentasi
+.card{
+    margin-top: 1rem;
+    background-color: #EEEEEE;
+    border: #EEEEEE;
+}
+
+.btn-back-dokumentasi {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-back-dokumentasi button {
+    background-color: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Layout Arsip Dokumentasi */
+.btn-back-arsip-dokumentasi {
+    margin: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-back-arsip-dokumentasi
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #0EA3DE;
+    width: 10%;
+    min-height: 40px;
+}
+
+/* Layout Form Kontak Pesan */
+
+.container-form-kontak {
+    min-height: 80vh;
+}
+
+.tittle-form-kontak {
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    width: 85%;
+    margin: 0 auto;
+    color: #606060;
+}
+
+.tittle-form-kontak #tittle-form-kontak {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    color: #606060;
+}
+
+.shape-kontak{
+    width: 80%;
+    height: 2rem;
+    margin: 0 auto;
+    box-shadow: 0px 10px 35px rgba(9, 80, 115, 0.3);
+    background: linear-gradient(to right, #1E4C6E, #0084C4);
+}
+
+.box-form-kontak {
+    margin: 1rem auto;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-kontak {
+    width: 100%;
+    grid-area: form-peminjaman;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.box-form-kontak .form-kontak .tittle-box {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.box-form-kontak .form-kontak .nama, .telp, .email, .lembaga {
+    border: 1px solid #0084C4;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    width: 40%;
+}
+
+.box-form-kontak 
+.txtbox{
+    border: 1px solid #0084C4;
+    border-radius: 5px;
+    min-height: 10rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.box-form-kontak .form-kontak label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.box-form-kontak .button-form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.button-form button {
+    width: 15%;
+    color: black;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0083c4ac;
+}
