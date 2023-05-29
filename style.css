@@ -453,6 +453,7 @@ input[type="checkbox"] {
 }
 
 .container-magang {
+    min-height: 80vh;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
