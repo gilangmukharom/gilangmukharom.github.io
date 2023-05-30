@@ -1083,7 +1083,7 @@ button{
     border-radius: 5px;
     min-height: 10rem;
     padding: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .box-form-kontak .form-kontak label {
@@ -1096,8 +1096,7 @@ button{
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    width: 80%;
 }
 
 .button-form button {
