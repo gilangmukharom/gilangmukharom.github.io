@@ -24,7 +24,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="false" style="color: black;">
                                 Kategori
                             </a>
                             <ul class="dropdown-menu">
@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="false" style="color: black;">
                                 Telusuri
                             </a>
                             <ul class="dropdown-menu">
@@ -185,15 +185,7 @@
 
             <div class="navigation-table">
                 <button class="back" onclick="window.location.href='magang.html'">Kembali</button>
-                <button class="download" id="open-modal">Unduh</button>
-            </div>
-
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <h2>Berhasil!</h2>
-                    <p>Dokumen Berhasil Unduh Silahkan Menunggu Konfirmasi Melalui Email!</p>
-                    <button class="close" onclick="window.location.href='form-kontrak-arsip.html'">ok</button>
-                </div>
+                <button class="download" id="open-modal" onclick="window.location.href='form-kontrak-arsip.html'">Unduh</button>
             </div>
 
         </div>
@@ -220,14 +212,6 @@
         function removeBorder(element) {
             element.classList.add("no-border");
         }
-
-        document.getElementById("open-modal").addEventListener("click", function () {
-            document.getElementById("modal").style.display = "block";
-        });
-
-        document.getElementsByClassName("close")[0].addEventListener("click", function () {
-            document.getElementById("modal").style.display = "none";
-        });
     </script>
 
 
